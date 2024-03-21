@@ -418,12 +418,12 @@ input, textarea{
         opacity: 1;
     }
     .img{
-        height: 50vh;
+        height: 80vh;
         width: 100vw;
         position: absolute;
     }
     .container{
-        height: 50vh;
+        height: 80vh;
     }
     .date{
         flex-direction: column;
@@ -467,9 +467,26 @@ input, textarea{
         background-color: rgba(200, 200, 200, 0.6);
         border-radius: 5px;
     }
+    .chead{
+        font-size: 30px;
+    }
     .invite{
         display: flex;
         flex-direction: column;
+    }
+    .invite .col{
+        width: 100%;
+        padding: 2%;
+        position: relative;
+    }
+    .invite .col img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        transition: ease-in-out 0.5s;
+    }
+    .col .hr{
+        margin: 0 10%;
     }
     .frt{
         width: fit-content;    
@@ -538,5 +555,20 @@ input, textarea{
   .add{
     padding: 7px;
     font-size: 16px;
-  }
+  }.welcome{
+    margin: auto;
+    padding-top: 35%;
+}
+}
+@media (max-width: 550px){
+    .welcome{
+        margin: auto;
+        padding-top: 35%;
+    }
+    .account{
+        width: 70%;
+    }
+    .account .chead, .contact .chead, #wedding .chead{
+        font-size: 28px;
+    }
 }
